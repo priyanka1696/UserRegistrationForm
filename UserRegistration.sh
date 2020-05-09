@@ -10,3 +10,14 @@ then
 else
     echo "Invalid"
 fi
+
+echo "Enter User last Name :"
+read lastName;
+lastNamepattern="^[A-Z][a-z]*$"
+if [[ $lastName =~ $Namepattern ]]
+then
+    echo "Valid"
+else
+    echo "Invalid"
+fi
+
