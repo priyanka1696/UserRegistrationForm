@@ -76,3 +76,14 @@ else
         echo "Invalid Password"
 fi
 
+echo "Enter the User Password:"
+read password3;
+passwordpattern="^[a-z A-Z 0-9 \!\@\#\$\%\^\&\* ? = . ]{8}$"
+if [[ $password3 =~ $passwordpattern ]]
+then
+        echo "Valid Password"
+else
+        echo "Invalid Password"
+fi
+
+
