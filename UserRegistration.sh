@@ -35,10 +35,22 @@ echo "Enter the User Mobile Number:"
 read MobileNumber;
 MobileNumberpattern="^[0-9]{3}[ ][1-9]{1}[0-9]{9}"
 
-if [[ $MobileNumber =~ $MobileNumberpattern ]];
+if [[ $MobileNumber =~ $MobileNumberpattern ]]
 then
         echo "Valid Mobile Number"
 else
         echo "Invalid Mobile Number"
 fi
+
+echo "Enter the User Password:"
+read password;
+passwordpattern="^[a-z A-Z 0-9 \!\@\#\$\%\^\&\*]{8}$"
+
+if [[ $password =~ $passwordpattern ]]
+then
+        echo "Valid Password"
+else
+        echo "Invalid Password"
+fi
+
 
