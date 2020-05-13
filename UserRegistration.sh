@@ -44,7 +44,7 @@ fi
 
 echo "Enter the User Password:"
 read password;
-passwordpattern="^[a-z A-Z 0-9 \!\@\#\$\%\^\&\*]{8}$"
+passwordpattern="^[a-z]{8}$"
 
 if [[ $password =~ $passwordpattern ]]
 then
