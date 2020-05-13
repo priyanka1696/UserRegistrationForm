@@ -44,32 +44,9 @@ fi
 
 echo "Enter the User Password:"
 read password;
-passwordpattern="^[a-z]{8}$"
-
-if [[ $password =~ $passwordpattern ]]
-then
-        echo "Valid Password"
-else
-        echo "Invalid Password"
-fi
-
-
-echo "Enter the User Password:"
-read password1;
-passwordpattern="^[a-z A-Z]{8}$"
-
-if [[ $password1 =~ $passwordpattern ]]
-then
-        echo "Valid Password"
-else
-        echo "Invalid Password"
-fi
-
-echo "Enter the User Password:"
-read password2;
 passwordpattern="^[a-z A-Z 0-9]{8}$"
 
-if [[ $password2 =~ $passwordpattern ]]
+if [[ $password =~ $passwordpattern ]]
 then
         echo "Valid Password"
 else
